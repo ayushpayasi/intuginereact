@@ -19,9 +19,11 @@ code {
 }
 
 .square {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
   background-color: rgb(48, 77, 240);
-  width: 70px;
-  height: 80px;
+  width: 10px;
+  height: 70px;
   border-radius: 15%;
-  margin-right: 5px;;
+  margin: 10px;;
 }
