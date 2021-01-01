@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.circle-icon {
+  background:grey;
+  padding:8px;
+  border-radius: 50%;
+}
+
+.square {
+  background-color: rgb(48, 77, 240);
+  width: 70px;
+  height: 80px;
+  border-radius: 15%;
+  margin-right: 5px;;
+}
