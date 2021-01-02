@@ -3,12 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PostRequest from "./components/postrequest.component"
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <PostRequest/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

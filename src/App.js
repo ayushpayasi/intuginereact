@@ -8,15 +8,6 @@ import Table from "./components/table.component"
 import PostRequest from "./components/postrequest.component"
 
 function App() {
-  // const headers = {'Authorization': "Bearer"+"tTU3gFVUdP"};
-  // const body = {'email': "ayushpayasi@gmail.com"};
-  // const apiurl ="https://f0ztti2nsk.execute-api.ap-south-1.amazonaws.com/v1/consignment/fetch"
-  // let article;
-  // axios.post(apiurl)
-  //       .then(response => this.setState({ article: response.data }))
-      //   .catch(error => {this.setState({ errorMessage: error.message });
-      //   console.error('There was an error!', error);
-      // });
   return (
     <div className="App">
       <Nav/>
