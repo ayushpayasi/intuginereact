@@ -1,5 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import Counters from "./counters.component"
+import Table from "./table.component"
+
+
+
 
 class PostRequest extends React.Component {
     constructor(props) {
@@ -9,7 +14,7 @@ class PostRequest extends React.Component {
             data: []
         };
     }
-    
+
     componentDidMount() {
         const baseurl = 'https://f0ztti2nsk.execute-api.ap-south-1.amazonaws.com/v1/consignment/fetch';
         const op = axios({
@@ -28,16 +33,16 @@ class PostRequest extends React.Component {
     render() {
         const { data } = this.state;
         return (
-            <div className="card text-center m-3">
-                <h5 className="card-header">POST Request with Set Headers</h5>
-                <div className="card-body">
-                    {console.log(data.length)}
-                    {/* {typeof Object.keys(data)} */}
-                </div>
+            <div className="container">
+                {console.log(data.length)}
+            <Counters/>
+            <br/>
+            <Table arr = {data}/>
                 </div>
             
         );
     }
+    
 }
 
 export default PostRequest ; 
