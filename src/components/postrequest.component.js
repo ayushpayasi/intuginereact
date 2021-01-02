@@ -35,7 +35,7 @@ class PostRequest extends React.Component {
         return (
             <div className="container">
                 {console.log(data.length)}
-            <Counters/>
+            <Counters arr = {data}/>
             <br/>
             <Table arr = {data}/>
                 </div>

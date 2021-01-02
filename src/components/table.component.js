@@ -19,9 +19,9 @@ export default class Table extends Component{
                     {console.log()}
                 </div>
                 <div className="col-8">
-                    <div className="table-responsive table-bordered table-sm">
+                    <div className="table-responsive tableFixHead table-sm">
                         <table className="table">
-                            <thead className="thead-dark">
+                            <thead className="thead-light">
                                 <tr> <th>AWB NUMBER</th>
                                 <th> TRANSPORTER</th>
                                 <th> SOURCE </th>
@@ -31,19 +31,17 @@ export default class Table extends Component{
                                 <th> STATUS </th>
                                 </tr>        
                             </thead>
-                            <tbody>
-                            { this.props.arr.map(atr =>{ console.log(atr) })
-                                    }
-
-                                    
-                            { this.props.arr.map(atr => { return(<tr key ={atr._id}>
+                            <tbody>        
+                            { this.props.arr.map(atr => { return(<tr className = {atr.current_status === 'Delivered' ?  'text-success' :atr.current_status === 'Undelivered' ? 'text-danger': 'text-warning'} key ={atr._id}>
                                 <td>{atr.awbno}</td>
                                 <td>{atr.carrier}</td>
                                 <td>{atr.from}</td>
                                 <td>{atr.to}</td>
                                 <td>{atr.pickup_date}</td>
-                                <td>{atr.extra_fields.length}</td>
+                                <td>{atr['extra_fields'] === undefined ? null : atr.extra_fields.expected_delivery_date }</td>
+                                <td>{atr.current_status}</td>
                             </tr>)})}
+
                             </tbody>
                         </table>
                     </div>

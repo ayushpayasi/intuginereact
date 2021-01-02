@@ -1,8 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,11 +19,32 @@ code {
 }
 
 .square {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Titillium Web', sans-serif;
   background-color: rgb(48, 77, 240);
   width: 10px;
   height: 70px;
   border-radius: 15%;
-  margin: 10px;;
+  margin: 10px;
+}
+
+.table-responsive{
+  max-height: 350px;;
+}
+.tableFixHead          { overflow-y: auto; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #93c7ff; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(59, 121, 238); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(8, 6, 121); 
 }
