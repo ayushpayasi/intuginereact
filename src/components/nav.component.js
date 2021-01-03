@@ -4,6 +4,10 @@ import profile from '../assets/profile.svg'
 import logo from '../assets/logo.svg';
 
 export default class Nav extends Component{
+    componentDidMount() {
+        document.title = 'Intugine';
+      }
+      
     render(){
         return(
             <nav className="navbar navbar-light navbar-expand-md bg-light justify-content-center">

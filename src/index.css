@@ -1,15 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 body {
-  margin: 0;
+  margin: 1px;
   font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #93c7ff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .circle-icon {
@@ -21,11 +21,45 @@ code {
 .square {
   font-family: 'Titillium Web', sans-serif;
   background-color: rgb(48, 77, 240);
+  font-size:x-large;
   width: 10px;
   height: 70px;
   border-radius: 15%;
-  margin: 10px;
+  margin: 25px;
 }
+.box{
+  max-height: 350px;
+  max-width:250px;
+}
+  .pos{
+  margin-top: 250px;
+}
+.vl {
+  border-left: 1px dashed blue;
+  height: 230px;
+  position: absolute;
+  left: 50%;
+  margin-left: 5px;
+  margin-bottom: -5px;
+  margin-top: 50px;
+  top: 0;
+}
+
+.box2{
+  border-style:ridge ;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: x-small;
+  border-color: blue;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.table-hover tr:hover {
+  background:#00ff00;
+  }
+  .pos2{
+    margin-top :20px;
+  }
 
 .table-responsive{
   max-height: 350px;;

@@ -25,16 +25,12 @@ class PostRequest extends React.Component {
                 "email": "ayushpayasi@gmail.com"
             }
           }).then(response=> { this.setState({data:response.data})}, err => console.log(err))
-          
-        //   const{data} = this.state
-        // console.log(data.length)
     }
     
     render() {
         const { data } = this.state;
         return (
             <div className="container">
-                {console.log(data.length)}
             <Counters arr = {data}/>
             <br/>
             <Table arr = {data}/>
